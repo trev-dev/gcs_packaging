@@ -1,0 +1,12 @@
+* Linux Bundlers for GURPS Character Sheet
+If you're a fan of GURPS and Linux/MacOSX, and you're not already aware of [[https://gurpscharactersheet.com/][GCS]] please go check it out. It's an invaluable tool for people who want a digital editor for character sheets but doesn't want to be stuck with Steve Jackson's dinosaur Windows only GURPS Character Aid.
+
+The purpose of this repository is to assist with bundling GCS for any Linux distribution and may be used for personal use.
+
+** AppImage Recipe
+This repository contains an [[./AppImage][AppImage recipe]] that will fetch the latest release of GCS from github releases and build an AppImage from that. It requires the use of [[https://github.com/AppImage/pkg2appimage/releases][pkg2appimage]] so make sure you grab that and put it on your path as an executable, or run it from the project directory with =./pkg2appimage.AppImage gcs_recipe.yml=
+
+This recipe currently does not support auto-updating but hopefully will in the future.
+
+** Flatpak
+Currently being worked on. Check back later

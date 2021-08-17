@@ -4,7 +4,13 @@ If you're a fan of GURPS and Linux/MacOSX, and you're not already aware of [[htt
 The purpose of this repository is to assist with bundling GCS for any Linux distribution and may be used for personal use.
 
 ** AppImage Recipe
-This repository contains an [[./AppImage][AppImage recipe]] that will fetch the latest release of GCS from github releases and build an AppImage from that. It requires the use of [[https://github.com/AppImage/pkg2appimage/releases][pkg2appimage]] so make sure you grab that and put it on your path as an executable, or run it from the project directory with =./pkg2appimage.AppImage gcs_recipe.yml=
+This repository contains an [[./AppImage][AppImage recipe]] that will fetch the latest release of GCS from github releases and build an AppImage from that.
+
+It requires the use of [[https://github.com/AppImage/pkg2appimage/releases][pkg2appimage]] so make sure you grab that and put it on your path as an executable, or run it from the project directory with =./pkg2appimage.AppImage gcs_recipe.yml=.
+
+It should generate an =./out= folder and a =./GCS= folder. The =out= folder contains the bundled AppImage which may be renamed to whatever you'd like. The =GCS= folder demonstrates the AppDir that was generated from the recipe prior to bundling. The GCS folder is helpful for debugging.
+
+For more information about AppImages please read the [[https://docs.appimage.org/][documentation]].
 
 This recipe currently does not support auto-updating but hopefully will in the future.
 
